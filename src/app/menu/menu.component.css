@@ -1,0 +1,166 @@
+.menu-container {
+    padding: 15px 15px 0;
+}
+
+.icon-close {
+    position: absolute;
+    right: 18px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.nav {
+    margin-top: 50px;
+}
+
+.nav__list > li {
+    margin-bottom: 20px;
+    font-size: .9rem;
+    color: var(--gray-color-text);
+}
+
+.nav__list--careers,
+.nav__list--about {
+    text-decoration: none;
+    color: inherit;
+}
+
+.login-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+}
+
+.btn {
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+    color: var(--gray-color-text);
+}
+
+.login {
+    border: none;
+}
+
+.register {
+    border: solid 1px var(--gray-color-text);
+    border-radius: 10px;
+}
+
+.arrow {
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
+
+.arrow-up,
+.arrow-down {
+    display: none;
+}
+
+.features-list,
+.company-list {
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
+.features-list-hidden,
+.company-list-hidden {
+    display: none;
+}
+
+.features-list > li,
+.company-list > li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.item{
+    padding-top: 3px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+@media (hover: hover){
+
+    .login:hover,
+    .register:hover,
+    .nav__list--features:hover,
+    .nav__list--company:hover,
+    .nav__list--careers:hover,
+    .nav__list--about:hover {
+        cursor: pointer; 
+        color: var(--almost-black);
+    }
+
+    .register:hover {
+        border-color: var(--almost-black);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px 0;
+    }
+
+    .nav__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+    }
+
+    .login-register {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 160px;
+        height: 60px;
+    }
+
+    .nav {
+        margin-top: initial;
+    }
+
+    .icon-close {
+        display: none;
+    }
+
+    .nav__list > li {
+        margin-bottom: 0;
+    }
+
+    .features-list,
+    .company-list {
+        position: absolute;
+        width: 115px;
+        height: max-content;
+        padding-left: 10px;
+        padding-top: 8px;
+        font-size: .8rem;
+        background-color: var(--almost-white);
+        box-shadow: 2px 5px 10px hsla(0, 0%, 8%, .3);
+        border-radius: 7px;
+    }
+
+    .company-list {
+        width: 90px;
+        padding-top: 12px;
+    }
+
+    .features-list > li,
+    .company-list > li  {
+        margin-bottom: 10px;
+    }
+}

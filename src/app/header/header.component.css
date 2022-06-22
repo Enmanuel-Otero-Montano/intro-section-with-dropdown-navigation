@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.menu-icon {
+    background-color: transparent;
+    border: none;
+}
+
+.menu {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    height: 100vh;
+    width: 195px;
+    background-color: hsl(0, 0%, 98%);
+    z-index: 10;
+}
+
+.menu-hidden {
+    transform: translateX(-195px);
+    transition: transform 750ms;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .header {
+        padding: 0 30px;
+    }
+
+    .menu {
+        position: initial;
+        width: 88%;
+        height: 60px;
+        z-index: initial;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+
+    .header {
+        padding: 0 80px;
+    }
+}

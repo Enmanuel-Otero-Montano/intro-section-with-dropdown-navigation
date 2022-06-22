@@ -1,0 +1,97 @@
+.main {
+    padding: 0 15px;
+    text-align: center;
+}
+
+.hero {
+    margin-bottom: 16px;
+    font-size: 2rem;
+    letter-spacing: 1.3px;
+}
+
+.description {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+    font-size: .9rem;
+    color: var(--gray-color-text);
+    line-height: 1.5;
+}
+
+.more {
+    padding: 12px;
+    font-size: .8rem;
+    background-color: var(--almost-black);
+    text-decoration: none;
+    color: var(--almost-white);
+    border-radius: 10px;
+}
+
+@media (hover: hover){
+
+    .more:hover {
+        background-color: var(--almost-white);
+        color: var(--almost-black);
+        border: solid 1px var(--almost-black);
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 650px) {
+
+    .description {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    .description {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main {
+        text-align: start;
+    }
+
+    .hero {
+        width: min(80%, 361px);
+        font-size: 3rem;
+        margin-top: 100px;
+    }
+
+    .description {
+        width: 75%;
+        margin: 40px 0 0;
+    }
+
+    .more {
+        display: inline-block;
+        width: 120px;
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1290px) {
+
+    .hero {
+        font-size: 3.2rem;
+    }
+
+    .description {
+        width: 65%;
+        margin: 40px 0 0;
+    }
+
+    .more {
+        display: inline-block;
+        width: 120px;
+        margin-top: 40px;
+        text-align: center;
+    }
+}
