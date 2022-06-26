@@ -11,3 +11,8 @@
     transform: scale(1, 1);
     transition: all 0ms 700ms;
 }
+
+.overflow {
+    position: relative;
+    overflow: hidden;
+}
